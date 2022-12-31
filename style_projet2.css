@@ -230,20 +230,26 @@ footer a {
     padding-top: 42px;
     padding-left: 40px;
     font-size: 22px;
+    
 }
 
 .container-hébergements a {
     text-decoration: none;
     color: black;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 
 .card-hebergement img {
     width: 264px;
     height: 124px;
-    border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+    border: 5px solid #FFFFFF;
 }
 
 .card-hebergement {
@@ -254,11 +260,7 @@ footer a {
 }
 
 
-.card-hebergement div {
-    background: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 0 10px grey;
-}
+
 
 .card-hebergement div h3 {
     padding-left: 16px;
