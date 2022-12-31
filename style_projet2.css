@@ -126,6 +126,11 @@ form i {
     cursor: pointer;
 }
 
+.filtres button:hover {
+    color: darkgrey;
+    border: 2px solid darkgrey;
+}
+
 .filtres i {
     color: #0065FC;
     padding-right: 10px;
