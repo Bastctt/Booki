@@ -73,18 +73,18 @@ nav img {
     font-size: 22px;
 }
 
+.filtres {
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    gap: 40px;
+}
+
 ::placeholder {
     color: black;
     font-weight: 700;
 }
 
-.filtres {
-    display: flex;
-    align-items: center;
-    padding-top: 46px;
-    flex-direction: row;
-    gap: 40px;
-}
 
 .filtres h2 {
     font-size: 18px;
@@ -116,42 +116,14 @@ form i {
     color: black;
 }
 .filtres button{
-     border: 2px solid #d9d9d9;
+    border: 2px solid #d9d9d9;
     height: 50px;
     width: 13%;
     border-radius: 25px;
     font-size: 17px;
     cursor: pointer;
 }
-/*
-.button-eco {
-   
-}
 
-.button-family {
-    border: 2px solid #d9d9d9;
-    height: 50px;
-    width: 8%;
-    border-radius: 25px;
-    font-size: 17px;
-}
-
-.button-romance {
-    border: 2px solid #d9d9d9;
-    height: 50px;
-    width: 13%;
-    border-radius: 25px;
-    font-size: 17px;
-}
-
-.button-dog {
-    border: 2px solid #d9d9d9;
-    height: 50px;
-    width: 17%;
-    border-radius: 25px;
-    font-size: 17px;
-}
-*/
 .filtres i {
     color: #0065FC;
     padding-right: 10px;
@@ -241,6 +213,7 @@ footer a {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    box-shadow: 0 0 10px grey;
 }
 
 
@@ -259,9 +232,6 @@ footer a {
     padding-top: 23px;
 }
 
-
-
-
 .card-hebergement div h3 {
     padding-left: 16px;
     padding-bottom: 9px;
@@ -276,7 +246,6 @@ footer a {
 
 .card-hebergement div i {
     color: #0065FC;
-    
     padding-bottom: 11px;
 }
 
@@ -304,7 +273,6 @@ footer a {
 
 .container-popular h2 {
     font-size: 22px;
-    
     padding-left: 37px
 }
 
@@ -322,6 +290,35 @@ footer a {
 
 .card-popular {
     padding-top: 27px;
+}
+
+.card-popular h3 {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 16px;
+}
+
+.card-popular p {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.card-popular i {
+    color: #0065FC;
+    padding-top: 44px;
+
+}
+
+.card-popular a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 33px;
+    padding-left: 37px;
+    padding-right: 40px;
 }
 
 
