@@ -1,0 +1,372 @@
+* {
+    /*max-width: 1400px;*/
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+section {
+    margin-left: 55px;
+}
+
+header {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav  ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 300px;
+}
+
+nav  ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+nav  ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+nav  ul li:hover{
+    border-top: 3px solid #0065FC;
+    color: black;
+}
+
+nav  ul li a:hover {
+    color: #0065FC;
+}
+
+nav img {
+    width: 125px;
+    height: 20px;
+    padding-left: 55px;
+}
+
+.title p {
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+
+.title {
+    font-family: 'Raleway';
+    padding-top: 63px;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 700;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.filtres h2 {
+    font-size: 18px;
+}
+    
+input {
+    height: 49px;
+    width: 332px;
+    left: 0px;
+    top: 0px;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 59px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    outline: none;
+}
+
+form {
+    padding-top: 20px;
+}
+
+form i {
+    border: 15px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    position: absolute;
+    height: 6%;
+    color: black;
+}
+.filtres button{
+     border: 2px solid #d9d9d9;
+    height: 50px;
+    width: 13%;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+/*
+.button-eco {
+   
+}
+
+.button-family {
+    border: 2px solid #d9d9d9;
+    height: 50px;
+    width: 8%;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.button-romance {
+    border: 2px solid #d9d9d9;
+    height: 50px;
+    width: 13%;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.button-dog {
+    border: 2px solid #d9d9d9;
+    height: 50px;
+    width: 17%;
+    border-radius: 25px;
+    font-size: 17px;
+}
+*/
+.filtres i {
+    color: #0065FC;
+    padding-right: 10px;
+}
+
+form button {
+    position: absolute;
+    width: 12%;
+    height: 49px;
+    left: 341px;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    background: #0065FC;
+    font-size: 18px;
+    color: white;
+}
+
+.info p {
+    padding-top: 53px;
+    padding-left: 21px;
+    font-size: 16px;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+}
+
+.info i {
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 7px 11px;
+    color: #0065FC;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #F2F2F2;
+}
+
+footer h2 {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+footer li {
+    padding-bottom: 12px;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.section-locations {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+.container-hébergements {
+    margin-top: 39px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 63%;
+    padding: 10px;
+   
+}
+
+.container-hébergements h2 {
+    padding-top: 42px;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.container-hébergements a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.card-hebergement img {
+    width: 264px;
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.card-hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 23px;
+}
+
+
+.card-hebergement div {
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+}
+
+.card-hebergement div h3 {
+    padding-left: 16px;
+    padding-bottom: 9px;
+    font-size: 16px;
+}
+
+.card-hebergement div p {
+    padding-left: 16px;
+    padding-bottom: 9px;
+    font-size: 14px;
+}
+
+.card-hebergement div i {
+    color: #0065FC;
+    
+    padding-bottom: 11px;
+}
+
+.container-hébergements h4 {
+    padding-top: 40px;
+    padding-left: 44px;
+    padding-bottom: 46px;
+    font-size: 18px;
+}
+
+.container-popular {
+    width: 30%;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 39px;
+}
+
+.card-popular img {
+    width: 137px;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.container-popular h2 {
+    font-size: 22px;
+    
+    padding-left: 37px
+}
+
+.container-popular span {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+
+.container-popular span i {
+    color: #0065FC;
+    padding-right: 42px;
+}
+
+.card-popular {
+    padding-top: 27px;
+}
+
+
+h5 {
+    font-size: 22px;
+    padding-left: 50px;
+    padding-bottom: 18px;
+}
+
+.section-activities {
+    padding-bottom: 61px;
+}
+
+.activities-marseille {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-right: 50px;
+}
+
+.activities-marseille img {
+    width: 302px;
+    height: 444px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.activities-marseille div {
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+.activities-marseille p {
+    padding-top: 20px;
+    padding-left: 19px;
+    padding-bottom: 21px;
+}
+
+/*code mobile*/
+@media screen and (max-width: 768px) {
+    .filtres{
+        flex-direction: column;
+    }
+}
+
+/*code tablette*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    
+}
