@@ -136,6 +136,7 @@ form i {
 
 .filtres button:hover {
     border: 2px solid darkgrey;
+    box-shadow: 0 0 10px darkgrey;
 }
 
 .filtres i {
@@ -190,6 +191,10 @@ footer h2 {
 footer li {
     padding-bottom: 12px;
     list-style-type: none;
+}
+
+footer li:hover {
+    text-decoration: underline;
 }
 
 footer a {
