@@ -81,12 +81,6 @@ nav img {
     gap: 40px;
 }
 
-::placeholder {
-    color: black;
-    font-weight: 700;
-}
-
-
 .filtres h2 {
     font-size: 18px;
     cursor: pointer;
@@ -127,7 +121,6 @@ form i {
 }
 
 .filtres button:hover {
-    color: darkgrey;
     border: 2px solid darkgrey;
 }
 
@@ -382,6 +375,7 @@ h5 {
     text-decoration: none;
     color: black;
 }
+
 /*code mobile*/
 @media screen and (max-width: 768px) {
     .filtres{
