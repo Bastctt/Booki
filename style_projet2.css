@@ -107,7 +107,7 @@ form i {
     height: 6%;
     color: black;
 }
-.filtres button {
+.filtres button:nth-child(2) {
     border: 2px solid #d9d9d9;
     height: 50px;
     width: 16%;
@@ -124,6 +124,17 @@ form i {
     border-radius: 25px;
     font-size: 17px;
     cursor: pointer;
+    background-color: #FFFFFF
+}
+
+.filtres button:nth-child(4) {
+    border: 2px solid #d9d9d9;
+    height: 50px;
+    width: 16%;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #FFFFFF;
 }
 
 .filtres button:nth-child(5) {
@@ -133,6 +144,7 @@ form i {
     border-radius: 25px;
     font-size: 17px;
     cursor: pointer;
+    background-color: #FFFFFF
 }
 
 .filtres button:hover {
@@ -246,8 +258,9 @@ footer a {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    box-shadow: 0 0 10px grey;
     width: 30%;
+    box-shadow: 0 0 10px #d9d9d9
+    
 }
 
 .card-hebergement img {
@@ -348,7 +361,7 @@ footer a {
     padding-right: 22px;
 }
 
-.container-popular a {
+.card-popular a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -356,7 +369,8 @@ footer a {
     border-radius: 20px;
     margin-bottom: 33px;
     background: #FFFFFF;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px #d9d9d9
+    
 }
 
 .section-activities h2 {
@@ -387,8 +401,9 @@ footer a {
 .activities-marseille div {
     background: #FFFFFF;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 0 10px gray;
-    overflow:hidden
+    overflow: hidden;
+    box-shadow: 0 0 10px #d9d9d9
+    
 }
 
 .activities-marseille div:hover {
@@ -411,8 +426,98 @@ footer a {
 
 /*code mobile*/
 @media screen and (max-width: 768px) {
+    nav { flex-direction: column;}
+
+    nav img { 
+        height: 30px;
+        padding-left: 115px;
+        margin-top: 30px;
+    }
+
+    nav ul {
+        width: 400px;
+    }
+
+    nav ul li {
+        padding-left: 85px;
+        margin-top: 48px;
+        font-size: 20px;
+    }
+
+    .title {
+        width: 123%;
+        margin-top: 31px
+    }
+
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    form {
+        padding-top: 36px;
+    }
+
+
     .filtres{
         flex-direction: column;
+    }
+
+    .filtres button:nth-child(n+5) {
+        width: 50%;
+        
+    }
+
+    .info {}
+
+    .section-locations {
+        flex-direction: column;
+    }
+
+    .container-hébergements {
+        width: 100%;
+    }
+
+    .card-hebergement {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-hébergements a {
+        width: 100%;
+    }
+
+    .section-activities h2 {
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .activities-marseille {
+        flex-direction: column;
+    }
+
+    .activities-marseille a {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .activities-marseille img {
+        height: 140px;
+    }
+
+    .activities-marseille p {
+        font-size: 18px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        margin-bottom: 20px;
     }
 }
 
