@@ -1,5 +1,4 @@
 * {
-    /*max-width: 1400px;*/
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
     margin: 0;
@@ -70,7 +69,7 @@ nav img {
 
 .title h1 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -104,7 +103,7 @@ form i {
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     position: absolute;
-    height: 6%;
+    height: 49px;
     color: black;
 }
 .filtres button:nth-child(2) {
@@ -236,10 +235,15 @@ footer a {
 }
 
 .container-hébergements h2 {
-    padding-top: 42px;
-    padding-left: 40px;
-    font-size: 22px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 18px;
     cursor: pointer;
+}
+
+.container-hébergements div h2 {
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .container-hébergements h4 {
@@ -306,6 +310,10 @@ footer a {
     background: #F2F2F2;
     border-radius: 20px;
     margin-top: 39px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .container-popular .star {
@@ -315,36 +323,43 @@ footer a {
     color: #0065FC;
 }
 
-.card-popular img {
-    width: 137px;
-    /* height: 144px; */
+.card-popular a img {
+    width: 40%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
 }
 
-.container-popular h2 {
-    font-size: 22px;
-    padding-left: 37px;
+.container-popular span h2 {
+    font-size: 18px;
     cursor: pointer;
+}
+.container-popular a > div{
+    width: 60%;
 }
 
 .container-popular span {
+    padding-top: 30px;
+    padding-left: 18px;
+    font-size: 20px;
+    cursor: pointer;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding-top: 48px;
+    width: 100%;
 }
 
 .container-popular span i {
     color: #0065FC;
-    padding-right: 42px;
+    padding-right: 18px;
+    font-size: 18px;
 }
 
 .card-popular {
-    padding-top: 27px;
-    padding-left: 37px;
-    padding-right: 40px
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 2px;
 }
 
 .card-popular h3 {
@@ -363,19 +378,20 @@ footer a {
 
 .card-popular a {
     display: flex;
-    flex-direction: row;
+    height: 150px;
     text-decoration: none;
     color: black;
     border-radius: 20px;
     margin-bottom: 33px;
     background: #FFFFFF;
-    box-shadow: 0 0 10px #d9d9d9
-    
+    box-shadow: 0 0 10px #d9d9d9;
+    width: 95%;
+    margin: auto;
 }
 
 .section-activities h2 {
-    font-size: 22px;
-    padding-left: 50px;
+    font-size: 18px;
+    padding-left: 28px;
     padding-bottom: 18px;
     cursor: pointer;
 }
@@ -426,11 +442,18 @@ footer a {
 
 /*code mobile*/
 @media screen and (max-width: 768px) {
+
+    section {
+        margin: 0;
+    }
+
+    body { margin: 0;}
+
     nav { flex-direction: column;}
 
     nav img { 
         height: 30px;
-        padding-left: 115px;
+        margin-left: 20px;
         margin-top: 30px;
     }
 
@@ -445,20 +468,17 @@ footer a {
     }
 
     .title {
-        width: 123%;
+        width: 100%;
         margin-top: 31px
-    }
-
-    .title h1 {
-        font-size: 25px;
-    }
-
-    .title p {
-        font-size: 20px;
     }
 
     form {
         padding-top: 36px;
+        padding-left: 10px;
+    }
+
+    form button {
+        width: 16%;
     }
 
 
@@ -475,10 +495,12 @@ footer a {
 
     .section-locations {
         flex-direction: column;
+        width: 100%;
     }
 
     .container-hébergements {
         width: 100%;
+        background-color: #FFFFFF;
     }
 
     .card-hebergement {
@@ -523,5 +545,107 @@ footer a {
 
 /*code tablette*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    
+
+    form button {
+        width: 15%;
+    }
+
+    .filtres {
+        gap: 18px;
+    }
+
+    .filtres button:nth-child(2) {
+        width: 20%;
+    }
+
+    .filtres button:nth-child(3) {
+        width: 15%;
+    }
+
+    .filtres button:nth-child(4) {
+        width: 19%;
+    }
+
+    .filtres button:nth-child(5) {
+        width: 26%;
+    }
+
+    .section-locations {
+        flex-direction: column;
+    }
+
+    .container-hébergements {
+        width: 100%;
+    }
+
+    .container-hébergements h2 {
+        padding-top: 17px;
+    }
+
+    .container-hébergements div h2 {
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .container-popular {
+        width: 100%;
+    }
+
+    .container-popular span {
+        margin-top: 15px;
+        margin-bottom: 18px;
+        padding-top: 0;
+    }
+
+    .card-popular {
+        flex-direction: row;
+    }
+
+    .card-popular a {
+        height: 130px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+
+    .card-popular a img {
+        width: 45%;
+    }
+
+    .card-popular div {
+
+    }
+
+    .card-popular h3 {
+        padding-top: 8px;
+        font-size: 13px;
+    }
+
+    .card-popular p {
+        padding-top: 7px;
+        font-size: 11px;
+    }
+
+    .container-popular .star {
+        
+    }
+
+    .activities-marseille {
+        margin-top: 25px;
+    }
+
+    .activities-marseille img {
+        height: 165px;
+    }
+
+    .activities-marseille p {
+        padding-top: 7px;
+        padding-left: 16px;
+        padding-bottom: 11px;
+        min-height: 60px;
+    }
+
+    footer {
+        padding: 35px;
+    }
+
 }
