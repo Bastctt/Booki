@@ -114,7 +114,6 @@ form > div{
 }
 
 form div i{
-    /* width: 50px; */
     margin: auto;
 }
 
@@ -127,6 +126,10 @@ form button {
     font-size: 18px;
     color: white;
     font-size: 16px;
+}
+
+.fa-loupe {
+    display: none;
 }
 
 .filtres button:nth-child(2) {
@@ -456,7 +459,6 @@ footer a {
     font-size: 16px;
 }
 
-/*code mobile*/
 @media screen and (max-width: 768px) {
  
     section {
@@ -486,6 +488,16 @@ footer a {
         font-size: 16px;
     }
 
+    nav ul li:hover {
+        border-top: 0px solid;
+        color: black;
+    }
+
+    nav ul li:hover {
+        border-bottom: 3px solid #0065FC;
+        padding-top: 5px;
+    }
+
     .title {
         width: 100%;
         margin-top: 31px;
@@ -508,18 +520,26 @@ footer a {
         width: 15%;
     }
 
-    .filtres{
+    .fa-loupe {
+        display: inline;
+    }
+
+    form p {
+        display: none;
+    }
+
+    .filtres {
         flex-wrap: wrap;
         gap: 0;
         justify-content: space-between;
     }
 
-    .filtres h2{
+    .filtres h2 {
         width: 100%;
         padding-left: 20px;
     }
 
-    .filtres button{
+    .filtres button {
         width: 45% !important;
         margin: 10px 8px 10px 8px;
         font-size: 15px !important;
@@ -541,7 +561,7 @@ footer a {
     }
 
     .container-hébergements h2 {
-        margin-top: 15pxpx;
+        margin-top: 15px;
         padding-left: 10px;
     }
 
@@ -621,12 +641,14 @@ footer a {
     }
 }
 
-/*code tablette*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
-
-
+    
     form {
         width: 50%;
+    }
+
+    .fa-loupe {
+        display: none;
     }
 
     .filtres {
