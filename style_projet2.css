@@ -140,6 +140,7 @@ form button {
     font-size: 17px;
     cursor: pointer;
     background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
 }
 
 .filtres button:nth-child(3) {
@@ -149,7 +150,8 @@ form button {
     border-radius: 25px;
     font-size: 17px;
     cursor: pointer;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
 }
 
 .filtres button:nth-child(4) {
@@ -160,6 +162,7 @@ form button {
     font-size: 17px;
     cursor: pointer;
     background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
 }
 
 .filtres button:nth-child(5) {
@@ -169,14 +172,13 @@ form button {
     border-radius: 25px;
     font-size: 17px;
     cursor: pointer;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
 }
 
 .filtres button:hover {
     box-shadow: 0 0 10px darkgrey;
     background-color: #DEEBFF;
-    transition: background-color 1s;
-    transition: box-shadow 1s;
 }
 
 .filtres i {
@@ -320,7 +322,7 @@ form button {
     object-fit: cover;
 }
 
-.container-popular span h2 {
+.container-popular > div h2 {
     font-size: 18px;
     cursor: pointer;
 }
@@ -328,7 +330,7 @@ form button {
     width: 60%;
 }
 
-.container-popular span {
+.container-popular > div:first-child {
     padding-top: 30px;
     padding-left: 18px;
     font-size: 20px;
@@ -339,7 +341,7 @@ form button {
     width: 100%;
 }
 
-.container-popular span i {
+.container-popular > div:first-child i {
     color: #0065FC;
     padding-right: 18px;
     font-size: 18px;
@@ -433,7 +435,7 @@ form button {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     background: #F2F2F2;
 }
@@ -477,10 +479,11 @@ footer a {
 
     nav ul {
         width: 100%;
+        margin-top: 20px;
     }
 
     nav ul li {
-        margin: 24px 0;
+        padding: 20px ;
         font-size: 20px;
     }
 
@@ -495,7 +498,6 @@ footer a {
 
     nav ul li:hover {
         border-bottom: 3px solid #0065FC;
-        padding-top: 5px;
     }
 
     .title {
@@ -524,7 +526,7 @@ footer a {
         display: inline;
     }
 
-    form p {
+    form span {
         display: none;
     }
 
@@ -583,7 +585,7 @@ footer a {
         border-radius: 0px;
     }
 
-    .container-popular span {
+    .container-popular > div:nth-child(1) {
         margin-top: 10px;
         margin-bottom: 10px;
         padding-top: 0;
