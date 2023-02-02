@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 ul {
     padding: 0 !important;
 }
@@ -435,7 +440,7 @@ form button {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
     background: #F2F2F2;
 }
