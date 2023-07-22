@@ -1,6 +1,6 @@
 # Booki 
 
-# Présentation du projet numéro de la formation développeur web OpenClassRooms : 
+Présentation du projet numéro de la formation développeur web OpenClassRooms : 
 
 L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
