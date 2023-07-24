@@ -1,6 +1,6 @@
 # Booki 
 
-Projet numéro 2 de la formation Développeur Web OpenClassrooms
+Projet numéro 2 de la formation Développeur Web OpenClassRooms
 
 ![Booki](./images_booki/Booki.PNG)
 
