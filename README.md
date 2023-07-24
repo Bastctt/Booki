@@ -1,8 +1,8 @@
 # Booki 
 
-![Booki](./images_booki/Booki.PNG)
-
 Projet numéro 2 de la formation Développeur Web OpenClassrooms
+
+![Booki](./images_booki/Booki.PNG)
 
 L’entreprise Booki souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 
